@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(92, 92, 92);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(37, 35, 35);
+    border-radius: 50px;
+}
+body {
+    background-color: #181a1f;
+    color: #aab1b6;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 7px 8px 8px 0px #0000000f, inset 3px -1px 12px -1px #0000000f;
+    width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+h1 {
+    margin: 15px auto 20px;
+}
+.inputs {
+    position: relative;
+    width: 100%;
+}
+input {
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: #42424216;
+    color: #aab1b6;
+}
+#taskInput {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-radius: 10px;
+}
+#taskBtn {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: -4.5px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+}
+#taskBtn:hover {
+    background-color: #3b3b3b3c;
+}
+ul {
+    list-style: none;
+    text-align: left;
+}
+ul li {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px 25px 15px 35px;
+    background-color: #0f0f0f15;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+ul li:hover {
+    background-color: #3b3b3b0f;
+}
+ul li .delBtn {
+    background-color: #50323017;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    padding: 15px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+ul li .delBtn:hover {
+    background-color: #5032302e;
+}
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.check {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1e1f24;
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #009688;
+}
